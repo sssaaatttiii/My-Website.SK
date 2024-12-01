@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #db3487;
+    --secondary-color: #cc2e72;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a.active {
+    color: var(--primary-color);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 10%;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.hero-image img {
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-alt {
+    background-color: var(--secondary-color);
+}
+
+.resume-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgb(219, 206, 206);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.resume-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.resume-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.job, .education {
+    margin-bottom: 1.5rem;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: rgb(125, 225, 11);
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    color: rgb(11, 221, 81);
+    margin: 0 10px;
+    text-decoration: none;
+}
